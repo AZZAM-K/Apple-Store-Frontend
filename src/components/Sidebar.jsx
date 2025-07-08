@@ -120,6 +120,14 @@ const Sidebar = ({ isShow }) => {
                   </Link>
                 </li>
                 <li>
+                  <Link
+                    to='/my-orders'
+                    className='block px-4 py-2 hover:text-[#0071E3]'
+                  >
+                    My orders
+                  </Link>
+                </li>
+                <li>
                   <button
                     onClick={handleLogout}
                     className='block w-full px-4 py-2 text-left hover:text-[#0071E3]'
