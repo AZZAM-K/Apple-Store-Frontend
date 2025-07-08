@@ -1,0 +1,5 @@
+export const USERS_URL = '/api/users'
+export const ADMIN_URL = '/api/admin'
+export const IPHONE_URL = '/api/iphone'
+export const ORDERS_URL = '/api/orders'
+export const PAYMENT_URL = '/api/payment'

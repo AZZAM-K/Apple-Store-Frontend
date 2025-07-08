@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+
+body {
+  background-color: #1d1d1f;
+}
+.input {
+  @apply block w-full p-2 rounded-md bg-gray-700 text-white placeholder-gray-400 mb-2 focus:outline-none focus:ring-3 focus:ring-blue-500;
+}
+.btn {
+  @apply px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-md text-white mt-2 cursor-pointer;
+}
