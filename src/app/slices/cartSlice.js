@@ -1,8 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit'
 import { updateCart } from '../utils/cartUtils'
 
-const initialState = localStorage.getItem('cart')
-  ? JSON.parse(localStorage.getItem('cart'))
+const initialState = sessionStorage.getItem('cart')
+  ? JSON.parse(sessionStorage.getItem('cart'))
   : {
       cartItems: [],
       totalPrice: 0,
@@ -37,7 +37,7 @@ const cartSlice = createSlice({
     clearCartItems: state => {
       state.cartItems = []
       state.totalPrice = 0
-      localStorage.setItem('cart', JSON.stringify(state))
+      sessionStorage.setItem('cart', JSON.stringify(state))
     },
   },
 })

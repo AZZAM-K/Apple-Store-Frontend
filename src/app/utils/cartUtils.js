@@ -4,7 +4,7 @@ export const updateCart = state => {
     0
   )
 
-  localStorage.setItem('cart', JSON.stringify(state))
+  sessionStorage.setItem('cart', JSON.stringify(state))
 
   return state
 }
