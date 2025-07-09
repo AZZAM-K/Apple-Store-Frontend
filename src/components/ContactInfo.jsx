@@ -39,6 +39,9 @@ const ContactInfo = () => {
           </a>
         </li>
       </ul>
+      <p className='text-center text-white text-lg mt-6 font-semibold'>
+        &copy; Copyright 2025. Made by AZZAM-K
+      </p>
     </div>
   )
 }
