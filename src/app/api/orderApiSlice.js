@@ -8,6 +8,7 @@ export const orderApiSlice = apiSlice.injectEndpoints({
         url: ORDERS_URL,
         method: 'POST',
         body: orderData,
+        credentials: 'include',
       }),
     }),
 
@@ -15,6 +16,7 @@ export const orderApiSlice = apiSlice.injectEndpoints({
       query: () => ({
         url: `${ORDERS_URL}/my-orders`,
         method: 'GET',
+        credentials: 'include',
       }),
     }),
 
@@ -22,6 +24,7 @@ export const orderApiSlice = apiSlice.injectEndpoints({
       query: orderId => ({
         url: `${ORDERS_URL}/${orderId}`,
         method: 'GET',
+        credentials: 'include',
       }),
     }),
 
@@ -29,6 +32,7 @@ export const orderApiSlice = apiSlice.injectEndpoints({
       query: () => ({
         url: `${ADMIN_URL}/orders`,
         method: 'GET',
+        credentials: 'include',
       }),
     }),
 
@@ -36,6 +40,7 @@ export const orderApiSlice = apiSlice.injectEndpoints({
       query: orderId => ({
         url: `${ORDERS_URL}/${orderId}`,
         method: 'DELETE',
+        credentials: 'include',
       }),
     }),
 
@@ -43,6 +48,7 @@ export const orderApiSlice = apiSlice.injectEndpoints({
       query: orderId => ({
         url: `${ORDERS_URL}/${orderId}/pay`,
         method: 'PUT',
+        credentials: 'include',
       }),
     }),
 
@@ -50,6 +56,7 @@ export const orderApiSlice = apiSlice.injectEndpoints({
       query: orderId => ({
         url: `${ADMIN_URL}/orders/${orderId}/deliver`,
         method: 'PUT',
+        credentials: 'include',
       }),
     }),
   }),

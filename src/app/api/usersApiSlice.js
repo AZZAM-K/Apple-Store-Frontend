@@ -8,6 +8,7 @@ export const userApiSlice = apiSlice.injectEndpoints({
         url: `${USERS_URL}/sign-up`,
         method: 'POST',
         body: userData,
+        credentials: 'include',
       }),
     }),
 
@@ -16,6 +17,7 @@ export const userApiSlice = apiSlice.injectEndpoints({
         url: `${USERS_URL}/sign-in`,
         method: 'POST',
         body: userData,
+        credentials: 'include',
       }),
     }),
 
@@ -23,6 +25,7 @@ export const userApiSlice = apiSlice.injectEndpoints({
       query: () => ({
         url: `${USERS_URL}/sign-out`,
         method: 'POST',
+        credentials: 'include',
       }),
     }),
 
@@ -30,6 +33,7 @@ export const userApiSlice = apiSlice.injectEndpoints({
       query: () => ({
         url: `${USERS_URL}/profile`,
         method: 'GET',
+        credentials: 'include',
       }),
     }),
 
@@ -38,6 +42,7 @@ export const userApiSlice = apiSlice.injectEndpoints({
         url: `${USERS_URL}/profile`,
         method: 'PUT',
         body: userData,
+        credentials: 'include',
       }),
     }),
 
@@ -45,6 +50,7 @@ export const userApiSlice = apiSlice.injectEndpoints({
       query: () => ({
         url: `${ADMIN_URL}/users`,
         method: 'GET',
+        credentials: 'include',
       }),
     }),
 
@@ -53,6 +59,7 @@ export const userApiSlice = apiSlice.injectEndpoints({
         url: `${ADMIN_URL}/users/${userId}`,
         method: 'PUT',
         body: { name, email },
+        credentials: 'include',
       }),
     }),
 
@@ -60,6 +67,7 @@ export const userApiSlice = apiSlice.injectEndpoints({
       query: id => ({
         url: `${ADMIN_URL}/users/${id}`,
         method: 'DELETE',
+        credentials: 'include',
       }),
     }),
   }),

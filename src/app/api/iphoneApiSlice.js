@@ -7,6 +7,7 @@ export const iphoneApiSlice = apiSlice.injectEndpoints({
       query: id => ({
         url: `${IPHONE_URL}/${id}`,
         method: 'GET',
+        credentials: 'include',
       }),
     }),
 
@@ -15,6 +16,7 @@ export const iphoneApiSlice = apiSlice.injectEndpoints({
         url: IPHONE_URL,
         method: 'POST',
         body: data,
+        credentials: 'include',
       }),
     }),
 
@@ -22,6 +24,7 @@ export const iphoneApiSlice = apiSlice.injectEndpoints({
       query: () => ({
         url: IPHONE_URL,
         method: 'GET',
+        credentials: 'include',
       }),
     }),
 
@@ -30,6 +33,7 @@ export const iphoneApiSlice = apiSlice.injectEndpoints({
         url: `${IPHONE_URL}/${id}/reviews`,
         method: 'POST',
         body: { rating, comment },
+        credentials: 'include',
       }),
     }),
 
@@ -38,6 +42,7 @@ export const iphoneApiSlice = apiSlice.injectEndpoints({
         url: `${IPHONE_URL}/${id}/reviews`,
         method: 'PUT',
         body: { rating, comment },
+        credentials: 'include',
       }),
     }),
 
@@ -45,6 +50,7 @@ export const iphoneApiSlice = apiSlice.injectEndpoints({
       query: id => ({
         url: `${IPHONE_URL}/${id}/reviews`,
         method: 'DELETE',
+        credentials: 'include',
       }),
     }),
 
@@ -52,6 +58,7 @@ export const iphoneApiSlice = apiSlice.injectEndpoints({
       query: () => ({
         url: `${IPHONE_URL}/last`,
         method: 'GET',
+        credentials: 'include',
       }),
     }),
   }),

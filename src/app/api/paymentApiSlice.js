@@ -8,6 +8,7 @@ export const paymentApiSlice = apiSlice.injectEndpoints({
         url: PAYMENT_URL,
         method: 'POST',
         body: { items, orderId },
+        credentials: 'include',
       }),
     }),
   }),
