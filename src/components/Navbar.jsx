@@ -44,7 +44,7 @@ const Navbar = () => {
   return (
     <nav className='bg-black text-white flex justify-between items-center p-4 fixed w-full z-10 top-0 border-b-2 border-white'>
       <div className='flex items-center'>
-        <FaApple size={40} />
+        <FaApple size={40} onClick={() => navigate('/')} />
       </div>
       <div className='md:flex space-x-8 items-center ml-10 justify-between font-medium hidden'>
         <Link

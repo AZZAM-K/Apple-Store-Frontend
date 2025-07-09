@@ -41,7 +41,10 @@ const Sidebar = ({ isShow }) => {
       } transition-all ease-out duration-300 h-screen flex md:hidden z-10 flex-col justify-between p-6 text-white font-medium`}
     >
       <div className='flex flex-col space-y-6 mt-12'>
-        <Link className='flex items-center text-white hover:text-[#0071E3]'>
+        <Link
+          className='flex items-center text-white hover:text-[#0071E3]'
+          to={'/'}
+        >
           <AiOutlineHome className='mr-2' size={30} />
           Home
         </Link>
